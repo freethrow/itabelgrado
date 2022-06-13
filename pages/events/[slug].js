@@ -11,10 +11,10 @@ const MapWithNoSSR = dynamic(() => import("../../components/Map"), {
   });
 
 
-const client = createClient({
-    space:'8p9eyzkkwusr' ,
-    accessToken:'mcbRT2VyzzlPfVUC-xuhgaaueKUyO5lDzXE3HmDku70' ,
-})
+  const client = createClient({
+    space:process.env.CONTENTFUL_SPACE_ID ,
+    accessToken:process.env.CONTENTFUL_ACCESS_KEY,
+  })
 
 export const getStaticPaths = async ()=> {
     const res = await client.getEntries({

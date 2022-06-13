@@ -26,7 +26,8 @@ const Header = () => {
   <div className="flex flex-row justify-between items-center container max-w-5xl md:mx-auto relative px-4 md:px-0 pt-2">
       <div className="flex flex-col justify-between items-start">
         <Link href="/" passHref><Image className="cursor-pointer" src="/logo1.png" height="60" width="100" /></Link>  
-        <Link href="/" passHref><h3 className="text-itaGray font-normal font-archivo ml-0">Italijanska Agencija za Spoljnu Trgovinu, Beograd</h3></Link>      
+        <Link href="/" passHref><h3 className="text-itaGray font-normal font-archivo ml-0 mt-2">Italijanska Agencija za Spoljnu Trgovinu, Beograd</h3></Link>
+        <h2 className="text-itaGreen font-normal font-archivo ml-0 text-lg">Newsletter</h2>      
       </div>
 
 
