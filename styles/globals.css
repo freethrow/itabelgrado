@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+
+    .location{
+        @apply my-8 shadow-lg p-5
+    }
+
+    .overlay{
+        @apply absolute top-0 left-0 w-screen h-screen bg-itaGray/80 z-30
+    }
+
+    .mobileMenu{
+        @apply absolute top-0 left-0 z-50 w-full h-screen
+         bg-itaGreen text-itaWhite uppercase flex flex-col justify-center items-center align-middle
+         transition-transform duration-700
+    }
+    .mobileBtn{
+        @apply border border-itaWhite hover:bg-itaWhite hover:text-itaGreen p-3 m-2 rounded-t-lg cursor-pointer transition-colors duration-300
+    }
+
+    .mobileBtn{
+        @apply inline-block w-full
+    }
+}

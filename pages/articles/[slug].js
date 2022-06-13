@@ -1,0 +1,65 @@
+import {createClient} from 'contentful'
+import { documentToReactComponents} from '@contentful/rich-text-react-renderer'
+import Image from 'next/image'
+
+
+const client = createClient({
+    space:'8p9eyzkkwusr' ,
+    accessToken:'mcbRT2VyzzlPfVUC-xuhgaaueKUyO5lDzXE3HmDku70' ,
+})
+
+export const getStaticPaths = async ()=> {
+    const res = await client.getEntries({
+        content_type:'article'
+    })
+
+    const paths = res.items.map(item => {
+        return {
+            params: {slug: item.fields.slug }
+        }
+    })
+    return {
+        paths,
+        fallback:false
+    }
+}
+
+export async function getStaticProps({params}){
+    const {items} = await client.getEntries({
+        content_type:'article',
+        'fields.slug':params.slug
+    })
+
+    return {
+        props: {article: items[0]}
+    }
+}
+
+
+const ArticleDetails = ({article}) => {
+
+
+  return (
+    <div className="flex flex-col items-center justify-center align-middle relative my-5">
+        <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">{article.fields.title}</h2>
+        <div className="grid gap-3 md:grid-cols-2 my-3 p-4">
+            <div className=" max-w-lg">
+                <Image 
+                    
+                    src={'https:'+ article.fields.cover.fields.file.url}
+                    width={article.fields.cover.fields.file.details.image.width}
+                    height={article.fields.cover.fields.file.details.image.height}
+                />
+            </div>
+            
+            <div className="prose prose-slate prose-sm z-20 bg-itaWhite">
+          
+            {documentToReactComponents(article.fields.content)}</div>
+
+            </div>
+        </div> 
+        
+  )
+}
+
+export default ArticleDetails
