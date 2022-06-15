@@ -18,6 +18,7 @@ const GalleryCard = ({title, address, dateTime, url, width, height, linkTo}) => 
             <div className="opacity-80 hover:opacity-100 transition-opacity duration-300">
                 <Image src={'https:'+ url}
                     className="w-full"
+                    alt={''}
                     width={width}
                     height={height} />
             </div>

@@ -39,7 +39,7 @@ const Articles = ({articles}) => {
             
             {articles.map(article=>(
                
-                <NewCard article={article} />
+                <NewCard article={article} key={article.fields.title} />
                
                             
                 )

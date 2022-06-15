@@ -85,8 +85,7 @@ export default function Home({event, articles, gallery}) {
             width = {event.fields.cover.fields.file.details.image.width}
             height= {event.fields.cover.fields.file.details.image.height}
             linkTo = {'/'+event.fields.slug}
-    
-            
+                
           />
 
      

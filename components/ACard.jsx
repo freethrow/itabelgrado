@@ -30,6 +30,7 @@ const evTime = format(new Date(eventTime), 'DD. MM. YYYY. [u] HH:mm');
                     width={width}
                     height={height}
                     priority={true}
+                    alt={''}
                     layout={"responsive"} />
             </div>
             <div className="flex items-center justify-between px-1 py-1 my-2 bg-gray-900">
