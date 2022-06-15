@@ -19,7 +19,7 @@ const about = () => {
                     height={887}
                   
                      />
-               <h2 className="font-archivo text-itaRed font-semibold border-b-itaGreen border-b">Foto "rubata" dall'IIC - chiedere permesso!!</h2>        
+               <h2 className="font-archivo text-itaRed font-semibold border-b-itaGreen border-b">Foto &quot;rubata&quot; dall'IIC - chiedere permesso!!</h2>        
         </div>        
       </div>
     </div>
