@@ -34,7 +34,8 @@ const Header = () => {
       <ul className="hidden md:flex flex-row text-itaLightGray space-x-3 h-full justify-end font-archivo">
           <li className="hover:text-itaDarkGray"><Link href="/">Naslovna</Link></li>
           <li className="hover:text-itaDarkGray"><Link href="/events" activeClassName="text-itaRed">Događaji</Link></li>    
-          <li className="hover:text-itaDarkGray"><Link href="/articles">Novosti</Link></li>           
+          <li className="hover:text-itaDarkGray"><Link href="/articles">Novosti</Link></li>  
+          <li className="hover:text-itaDarkGray"><Link href="/galleries">Galerije</Link></li>           
           <li className="hover:text-itaDarkGray"><Link href="/about">ITA@Beograd</Link></li>   
       </ul>
 
@@ -43,7 +44,8 @@ const Header = () => {
         <ul className="flex flex-col w-3/4">
             <li className="mobileBtn"><Link href="/" passHref>Naslovna</Link></li>
             <li className="mobileBtn"><Link href="/events" activeClassName="text-itaRed">Događaji</Link></li>    
-            <li className= "mobileBtn"><Link href="/articles">Novosti</Link></li>           
+            <li className= "mobileBtn"><Link href="/articles">Novosti</Link></li>
+            <li className= "mobileBtn"><Link href="/galleries">Galerije</Link></li>                
             <li className="mobileBtn"><Link href="/about">ITA@Beograd</Link></li>   
         </ul>
       </div>

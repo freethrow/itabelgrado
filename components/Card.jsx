@@ -17,7 +17,7 @@ const Card = ({title, cover, url, cover_w, cover_h, short, eventTime}) => {
     className="w-full"
     width={cover_w}
     height={cover_h}
-    alt={''} />
+    alt={title} />
   </figure>
   <div className="card-body">
     <h2 className="card-title text-itaGreen font-medium">
@@ -29,13 +29,10 @@ const Card = ({title, cover, url, cover_w, cover_h, short, eventTime}) => {
     <p>{evTime}</p>
    
     <div className="card-actions justify-end">
-      <div className="btn btn-primary">Details</div> 
-
+      <div className="btn btn-primary">detalji</div>
     </div>
   </div>
 </div>
-
-
 </Link>
     
   )

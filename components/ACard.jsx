@@ -3,10 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { format } from 'fecha';
 
-
-
-
-
 const ACard = ({title, description, eventTime, url, width, height, linkTo}) => {
 
     
@@ -30,7 +26,7 @@ const evTime = format(new Date(eventTime), 'DD. MM. YYYY. [u] HH:mm');
                     width={width}
                     height={height}
                     priority={true}
-                    alt={''}
+                    alt={title}
                     layout={"responsive"} />
             </div>
             <div className="flex items-center justify-between px-1 py-1 my-2 bg-gray-900">

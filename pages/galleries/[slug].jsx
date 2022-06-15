@@ -75,7 +75,7 @@ const GalleryDetails = ({gallery}) => {
 
             <div className="my-10 mx-5">
               
-                <PhotoAlbum layout="columns" photos={photos} onClick={(event, photo, index) => setIndex(index)} />
+                <PhotoAlbum layout="columns" photos={photos} onClick={(event, photo, index) => setIndex(index)} className="border4 border-itaRed" />
                 <Lightbox slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} />
      
 

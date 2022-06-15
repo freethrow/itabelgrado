@@ -11,112 +11,15 @@ const about = () => {
 </div>
         </div>
       
-        <div className="w-full md:w-96 md:max-w-full mx-auto p-4">
-          <div className="p-6 shadow-md sm:rounded-md">
-            <form>
-              <label className="block mb-6">
-                <span className=" text-itaGray text-sm">Ime i prezime</span>
-                <input
-                  type="text"
-                  name="name"
-                  className="
-                    block
-                    w-full
-                    text-xs
-                    p-2
-                    mt-1
-                    border-itaGray
-                    rounded-md
-                    shadow-sm
-                    focus:border-itaLightGray
-                    focus:ring
-                    focus:ring-itaLightGray
-                
-                   
-                  "
-                  placeholder="Joe Bloggs"
-                />
-              </label>
-              <label className="block mb-6">
-                <span className=" text-itaGray text-sm">Firma</span>
-                <input
-                  type="text"
-                  name="company"
-                  className="
-                    block
-                    w-full
-                    mt-1
-                    border-itaGray
-                    rounded-md
-                    shadow-sm
-                    focus:border-indigo-300
-                    focus:ring
-                    focus:ring-indigo-200
-                    focus:ring-opacity-50
-                  "
-                  placeholder="Firma DOO"
-                />
-              </label>
-              <label className="block mb-6">
-                <span className="text-itaGray text-sm">Email addresa</span>
-                <input
-                  name="email"
-                  type="email"
-                  className="
-                    block
-                    w-full
-                    mt-1
-                    p-2
-                    rounded-md
-                    shadow-sm
+        <div className="w-full md:max-w-full mx-auto p-4 shadow-lg">
+        <Image src={'/palazzo-italia.jpg'}
+                    className="w-full"
+                    alt={"Palazzo Italia"}
+                    width={1140}
+                    height={887}
                   
-                  "
-                  placeholder="joe.bloggs@example.com"
-                  required
-                />
-              </label>
-              <label className="block mb-6">
-                <span className="text-itaGray text-sm">Poruka</span>
-                <textarea
-                  name="message"
-                  className="
-                    block
-                    w-full
-                    mt-1
-                    
-                    rounded-md
-                    shadow-sm
-                    focus:border-itaGreen
-                    focus:ring
-                    focus:ring-itaGreen
-                    focus:ring-opacity-50
-                  "
-                  rows="3"
-                  placeholder="Vaša poruka"
-                ></textarea>
-              </label>
-              <div className="mb-6">
-                <button
-                  type="submit"
-                  className="
-                    h-10
-                    px-5
-                    text-itaWhite
-                    bg-itaRed
-                    rounded-lg
-                    w-full
-          
-                    focus:shadow-outline
-                    hover:opacity-80 transition-opacity duration-300
-                    flex flex-row items-center justify-center align-middle
-                  "
-                >
-                  <BiMailSend size={30} /> Poslati
-                </button>
-              </div>
-
-            </form>
-          </div>
+                     />
+               <h2 className="font-archivo text-itaRed font-semibold border-b-itaGreen border-b">Foto "rubata" dall'IIC - chiedere permesso!!</h2>        
         </div>        
       </div>
     </div>

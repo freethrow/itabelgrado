@@ -8,12 +8,12 @@ const Footer = () => {
       <img className="h-24" src="/negative.png" />
       <div className="h-16 mx-5 font-sans font-light  text-sm text-itaWhite">
         <div className="border-b-2 border-itaWhite font-medium">Italijanska Agencija za Spoljnu Trgovinu</div>
-        <div>Kneza Miloša 56, 11000  BEOGRAD</div>
-        <div>Tel: 0038111/3629939
-          Fax: 0038111/3672458
+          <div><span className="font-semibold">Adresa: </span>Kneza Miloša 56, 11000  BEOGRAD</div>
+          <div><span className="font-semibold">Telefon: </span>0038111/3629939
+          <span className="font-semibold">Fax: </span> 0038111/3672458
           
         </div>
-        <div>E-mail: belgrado@ice.it - web: www.ice.it</div>   
+        <div><span className="font-semibold">E-mail:</span> belgrado@ice.it - <span className="font-semibold">Web: </span>www.ice.it</div>   
         
         </div>
 

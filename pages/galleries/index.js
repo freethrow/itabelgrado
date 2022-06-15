@@ -26,8 +26,6 @@ export const getStaticProps = async () => {
 
 
 const Galleries = ({galleries}) => {
-  console.log(galleries)
-
 
 
   return (
