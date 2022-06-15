@@ -49,6 +49,7 @@ const ArticleDetails = ({article}) => {
                     src={'https:'+ article.fields.cover.fields.file.url}
                     width={article.fields.cover.fields.file.details.image.width}
                     height={article.fields.cover.fields.file.details.image.height}
+                    alte={''}
                 />
             </div>
             

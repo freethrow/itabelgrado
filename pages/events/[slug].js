@@ -70,6 +70,7 @@ const EventDetails = ({event}) => {
                 src={'https:'+ event.fields.cover.fields.file.url}
                 width={event.fields.cover.fields.file.details.image.width}
                 height={event.fields.cover.fields.file.details.image.height}
+                alt={''}
             />         
             </div>
 
@@ -88,7 +89,7 @@ const EventDetails = ({event}) => {
                 {event.fields.documents&&event.fields.documents.map((document)=>{
                     return (
                     
-                        <Link href={'https:'+document.fields.file.url} download="New" className="cursor-pointer">
+                        <Link href={'https:'+document.fields.file.url} download="New" className="cursor-pointer" key={document.fields.title}>
                             <div className="text-itaGray my-2 hover:text-itaRed cursor-pointer font-medium text-sm flex flex-row justify-start align-middle items-center space-x-2">
                             <GrDocumentVerified size={16} /> <span>{document.fields.title}</span>
                                   </div>

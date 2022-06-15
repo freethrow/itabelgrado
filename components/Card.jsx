@@ -16,7 +16,8 @@ const Card = ({title, cover, url, cover_w, cover_h, short, eventTime}) => {
     <Image src={'https:'+ cover}
     className="w-full"
     width={cover_w}
-    height={cover_h} />
+    height={cover_h}
+    alt={''} />
   </figure>
   <div className="card-body">
     <h2 className="card-title text-itaGreen font-medium">
