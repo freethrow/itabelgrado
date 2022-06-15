@@ -29,7 +29,7 @@ const Galleries = ({galleries}) => {
 
 
   return (
-    <div className="flex-1 max-w-5xl mx-auto my-5 container md:mx-auto px-4 ">
+    <div className="flex-1 max-w-5xl mx-auto my-5 container  px-2 md:px-0 ">
 
     <h2 className=" font-archivo text-itaGreen font-bold text-xl my-2">Galerije</h2>
     
