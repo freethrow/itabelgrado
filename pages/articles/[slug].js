@@ -42,17 +42,17 @@ const ArticleDetails = ({article}) => {
   return (
     <div className="flex flex-col items-center justify-center align-middle relative my-5">
         <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">{article.fields.title}</h2>
-        <div className="grid gap-3 md:grid-cols-2 my-3 p-4">
-            <div className=" max-w-lg">
-                <Image 
-                    
+        <div className="grid gap-3 md:grid-cols-2 my-3 p-2">
+
+            <div className=" max-w-lg p-5 shadow-md">
+                <Image                    
                     src={'https:'+ article.fields.cover.fields.file.url}
                     width={article.fields.cover.fields.file.details.image.width}
                     height={article.fields.cover.fields.file.details.image.height}
                 />
             </div>
             
-            <div className="prose prose-slate prose-sm z-20 bg-itaWhite">
+            <div className="prose prose-slate prose-sm text-sm z-20 bg-itaWhite flex flex-col justify-center items-center align-middle p-2">
           
             {documentToReactComponents(article.fields.content)}</div>
 

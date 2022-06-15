@@ -4,15 +4,15 @@ import {BiMailSend} from 'react-icons/bi'
 const about = () => {
   return (
     <div className="flex flex-col container max-w-5xl md:mx-auto px-2 md:px-0">
-      <div className=" grid grid-cols-2 gap-3">
-        <div className="my-5">
+      <div className=" grid md: grid-cols-2 gap-3">
+        <div className="my-5 h-full flex flex-col justify-center ">
         <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">O Agenciji</h2>
           <div className="text-itaGgray my-4 text-sm font-normal">Testo sull'Agenzia ITA in serbo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
 </div>
         </div>
       
         <div className="w-full md:w-96 md:max-w-full mx-auto p-4">
-          <div className="p-6 border border-x-itaLightGray sm:rounded-md">
+          <div className="p-6 shadow-md sm:rounded-md">
             <form>
               <label className="block mb-6">
                 <span className=" text-itaGray text-sm">Ime i prezime</span>
@@ -22,14 +22,17 @@ const about = () => {
                   className="
                     block
                     w-full
+                    text-xs
+                    p-2
                     mt-1
                     border-itaGray
                     rounded-md
                     shadow-sm
-                    focus:border-indigo-300
+                    focus:border-itaLightGray
                     focus:ring
-                    focus:ring-indigo-200
-                    focus:ring-opacity-50
+                    focus:ring-itaLightGray
+                
+                   
                   "
                   placeholder="Joe Bloggs"
                 />
