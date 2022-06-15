@@ -62,7 +62,7 @@ const about = () => {
                 <input
                   name="email"
                   type="email"
-                  class="
+                  className="
                     block
                     w-full
                     mt-1
@@ -75,8 +75,8 @@ const about = () => {
                   required
                 />
               </label>
-              <label class="block mb-6">
-                <span class="text-itaGray text-sm">Poruka</span>
+              <label className="block mb-6">
+                <span className="text-itaGray text-sm">Poruka</span>
                 <textarea
                   name="message"
                   className="
@@ -95,7 +95,7 @@ const about = () => {
                   placeholder="Vaša poruka"
                 ></textarea>
               </label>
-              <div class="mb-6">
+              <div className="mb-6">
                 <button
                   type="submit"
                   className="
