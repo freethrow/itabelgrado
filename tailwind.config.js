@@ -14,7 +14,8 @@ module.exports = {
       'itaGgray':'#AAAAAA',
       'itaDarkGray': '#80B285',
       'itaLightGray': '#B1B3B6',
-      'lightGray':'#AAAAAA'
+      'lightGray':'#AAAAAA',
+      'ddarkGray':'#5f6269'
      
     },
     extend: {

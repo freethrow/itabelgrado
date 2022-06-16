@@ -22,16 +22,24 @@ const Header = () => {
 
   return (
  
-  <header className="h-full">
-  <div className="flex flex-row justify-between items-center container max-w-5xl md:mx-auto relative px-4 md:px-0 pt-2">
-      <div className="flex flex-col justify-between items-start align-top">
-        <Link href="/" passHref><Image className="cursor-pointer" src="/logo1.png" height="60" width="100" /></Link>  
-        <Link href="/" passHref><h3 className="text-itaGray font-normal font-archivo ml-0 mt-2">Italijanska Agencija za Spoljnu Trgovinu, Beograd</h3></Link>
-        <h2 className="text-itaGreen font-normal font-archivo -ml-1 text-5xl px-0">Newsletter</h2>      
+  <header className="h-full flex flex-row justify-around">
+  <div className="flex md:flex-col flex-row justify-between container max-w-5xl md:mx-auto relative px-4  pt-2">
+      <div className="flex flex-row justify-between items-center align-middle">
+        <Link href="/" passHref><Image className="cursor-pointer" src="/logo1.png" height="90" width="150" /></Link>
+        <div className="hidden md:block">
+          <Link href="/" passHref><h3 className="text-itaGray font-normal font-archivo px-2 my-2 cursor-pointer">
+            Italijanska Agencija za Spoljnu Trgovinu, Beograd</h3>
+          </Link>
+          <div className="flex flex-row">
+            <div className="bg-itaRed h-1 w-1 rounded-full translate-y-[-2px]"></div>
+            <div className=" bg-itaLightGray h-[1px] w-full mx-1"></div>
+            <div className="bg-itaGreen h-1 w-1 rounded-full translate-y-[-2px]"></div>
+          </div>
+        </div> 
       </div>
 
 
-      <ul className="hidden md:flex flex-row text-itaLightGray space-x-3 h-full justify-end font-archivo">
+      <ul className="hidden md:flex flex-row text-itaGray space-x-3 h-full my-16 justify-evenly font-archivo uppercase">
           <li className="hover:text-itaDarkGray"><Link href="/">Naslovna</Link></li>
           <li className="hover:text-itaDarkGray"><Link href="/events" activeClassName="text-itaRed">Događaji</Link></li>    
           <li className="hover:text-itaDarkGray"><Link href="/articles">Novosti</Link></li>  
@@ -39,7 +47,7 @@ const Header = () => {
           <li className="hover:text-itaDarkGray"><Link href="/about">ITA@Beograd</Link></li>   
       </ul>
 
-      <div className={open?"mobileMenu":"mobileMenu -translate-y-full"}>
+      <div className={open?"mobileMenu":"mobileMenu -translate-y-full"} onClick={()=>setOpen(false)}>
       <Link href="/" passHref><Image className="cursor-pointer" src="/negative.png" height="120" width="200" /></Link>  
         <ul className="flex flex-col w-3/4">
             <li className="mobileBtn"><Link href="/" passHref>Naslovna</Link></li>
@@ -49,12 +57,12 @@ const Header = () => {
             <li className="mobileBtn"><Link href="/about">ITA@Beograd</Link></li>   
         </ul>
       </div>
-      <span className={open?"md:hidden flex z-50 text-itaWhite":"md:hidden flex z-50 text-itaGreen"} onClick={toggleMobile}>
+        <span className={open?"md:hidden flex z-50 text-itaWhite":"md:hidden flex z-50 text-itaGreen"} onClick={toggleMobile}>
         {open? <AiOutlineClose size={25} /> : <AiOutlineMenu  size={25} />}
-      </span>
+        </span>
       
-  </div>
-  
+    </div>
+
  
   </header>
 
