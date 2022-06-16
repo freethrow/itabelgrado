@@ -33,9 +33,9 @@ const Footer = () => {
       </div>
     </div>
     <div className="bg-itaWhite flex flex-col justify-between container max-w-5xl md:mx-auto text-xs px-2 py-5">
-      <p className="m-1">Copyright © ICE - Agenzia per la promozione all'estero e l'internazionalizzazione delle imprese italiane, All rights reserved.</p>
+      <p className="m-1">Copyright © ICE - Agenzia per la promozione all&apos;estero e l&apos;internazionalizzazione delle imprese italiane, All rights reserved.</p>
       <p className="m-1">Ricevi questa e-mail poiché ti sei iscritto personalmente, o per conto della tua azienda/organizzazione, nella mailing list 
-        della Newsletter dell'ICE Agenzia. I dati vengono forniti ad una società terza, incaricata del trattamento dei dati personali
+        della Newsletter dell&apos;ICE Agenzia. I dati vengono forniti ad una società terza, incaricata del trattamento dei dati personali
          ad uso tecnico.
       </p>
       <p className="m-1">Per cancellarsi dalla Newsletter, cliccare su: Cancellami</p>
