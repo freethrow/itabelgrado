@@ -44,12 +44,12 @@ const ArticleDetails = ({article}) => {
         <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">{article.fields.title}</h2>
         <div className="grid gap-3 md:grid-cols-2 my-3 p-2">
 
-            <div className=" max-w-lg p-5 shadow-md">
+            <div className=" max-w-lg p-5 shadow-md flex flex-col justify-center items-center">
                 <Image                    
                     src={'https:'+ article.fields.cover.fields.file.url}
                     width={article.fields.cover.fields.file.details.image.width}
                     height={article.fields.cover.fields.file.details.image.height}
-                    alte={''}
+                    alt={''}
                 />
             </div>
             

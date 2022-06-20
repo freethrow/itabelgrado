@@ -29,4 +29,8 @@
     .mainMenu>li{
         @apply hover:scale-125 transition-transform duration-500
     }
+
+    .prose p{
+        @apply my-2
+    }
 }

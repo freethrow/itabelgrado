@@ -19,7 +19,7 @@ const evTime = format(new Date(eventTime), 'DD. MM. YYYY. [u] HH:mm');
             <div className="relative bg-itaGreen hover:bg-[#000000] transition-colors  duration-500">
                 <div className="absolute z-10 top-0 left-0  text-center h-full w-full flex flex-col items-center justify-center align-middle text-itaWhite">
                 <h3 className="border border-b-itaWhite p-4 m-2 w-2/3">{title}</h3>
-                <div className="w-2/3 font-bold">{evTime}</div>
+                <div className="w-2/3 font-bold text-xl">{evTime}</div>
                 </div>
             <Image src={'https:'+ url} 
                 className="object-cover w-full h-48 mt-2 opacity-60"

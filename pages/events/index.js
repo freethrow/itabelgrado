@@ -33,7 +33,7 @@ const Events = ({events}) => {
 
 <h2 className=" font-archivo text-itaGreen font-bold text-xl my-2 text-center border-itaGreen border-b">Najava manifestacija</h2>
 
-        <div className="grid md:grid-cols-3 gap-5 my-8">
+        <div className={events.length>1?"grid md:grid-cols-3 gap-5 my-8":"my-8"}>
             
             {events.map(event=>(
             
