@@ -2,10 +2,8 @@ import { useEffect, useState } from "react"
 
 import {createClient} from 'contentful'
 
-
-import Image from "next/image"
 import Video from "../components/Video"
-import HomeCard from "../components/HomeCard"
+
 
 
 import NewsCard from "../components/NewsCard"
@@ -69,6 +67,7 @@ export default function Home({event, articles, gallery}) {
 
   return (
     <div className=" container max-w-5xl md:mx-auto px-2 md:px-0">
+
       <Video video = {videoUrl} />
 
  

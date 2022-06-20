@@ -25,13 +25,13 @@ export const getStaticProps = async () => {
 
 const Events = ({events}) => {
 
-
+    console.log(events.length)
 
 
   return (
     <div className="flex-1 max-w-5xl mx-auto my-5 container  px-2 md:px-0">
 
-<h2 className=" font-archivo text-itaGreen font-bold text-xl my-2">Najava manifestacija</h2>
+<h2 className=" font-archivo text-itaGreen font-bold text-xl my-2 text-center border-itaGreen border-b">Najava manifestacija</h2>
 
         <div className="grid md:grid-cols-3 gap-5 my-8">
             

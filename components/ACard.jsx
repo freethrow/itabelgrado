@@ -23,8 +23,8 @@ const evTime = format(new Date(eventTime), 'DD. MM. YYYY. [u] HH:mm');
                 </div>
             <Image src={'https:'+ url} 
                 className="object-cover w-full h-48 mt-2 opacity-60"
-                    width={width}
-                    height={height}
+                    width={width/4}
+                    height={height/4}
                     priority={true}
                     alt={title}
                     layout={"responsive"} />

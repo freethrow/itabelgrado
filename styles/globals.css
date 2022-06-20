@@ -25,4 +25,8 @@
     .mobileBtn{
         @apply inline-block w-full
     }
+
+    .mainMenu>li{
+        @apply hover:scale-125 transition-transform duration-500
+    }
 }
