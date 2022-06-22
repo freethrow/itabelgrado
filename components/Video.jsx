@@ -14,7 +14,7 @@ const Video = ({video}) => {
     autoPlay
     loop
     muted
-    className="absolute z-10 w-auto  min-h-full max-w-none"
+    className="absolute z-10 w-auto  min-h-full"
     id="video"
   >
     <source

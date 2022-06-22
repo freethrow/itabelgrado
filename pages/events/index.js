@@ -25,7 +25,7 @@ export const getStaticProps = async () => {
 
 const Events = ({events}) => {
 
-    console.log(events.length)
+  
 
 
   return (

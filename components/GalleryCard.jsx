@@ -14,7 +14,7 @@ const GalleryCard = ({title, address, dateTime, url, width, height, linkTo}) => 
         <Link href={"galleries/"+linkTo}>
         <div>
             <div className="font-archivo text-itaGreen font-semibold text-lg">{title}</div>
-            <div className="text-sm font-medium text-itaGray">Neko</div>
+            <div className="text-sm font-medium text-itaGray"></div>
             <div className="opacity-80 hover:opacity-100 transition-opacity duration-300">
                 <Image src={'https:'+ url}
                     className="w-full"
@@ -22,7 +22,7 @@ const GalleryCard = ({title, address, dateTime, url, width, height, linkTo}) => 
                     width={width}
                     height={height} />
             </div>
-            <div className=" text-itaGray font-bold">{address} <span className=" font-semibold text-itaGreen">{evTime}</span></div>
+            <div className=" text-itaGray font-normal">{address} <span className="text-itaGreen">{evTime}</span></div>
         </div>
         </Link>
     </div>

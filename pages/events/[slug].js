@@ -59,7 +59,7 @@ const EventDetails = ({event}) => {
                 <div className="p-8 shadow-lg my-4 bg-itaWhite rounded-t-xl">
                               
                     <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">{event.fields.title}</h2>
-                    <div className="prose prose-p:my-2 prose-sm prose-ul:list-none prose-ul:font-medium">
+                    <div className="prose prose-p:my-2 prose-sm prose-ul:list-none prose-ol:font-bold prose-a:text-itaGreen prose-a:font-light prose-a:decoration-0">
                         {documentToReactComponents(event.fields.detailed)}
                     </div>
                 </div>

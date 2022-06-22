@@ -31,7 +31,7 @@ const Galleries = ({galleries}) => {
   return (
     <div className="flex-1 max-w-5xl mx-auto my-5 container  px-2 md:px-0 ">
 
-    <h2 className=" font-archivo text-itaGreen font-bold text-xl my-2 text-center">Galerije</h2>
+<h2 className=" font-archivo text-itaGreen font-bold text-xl my-2 text-center border-b-itaGreen border-b">Galerije slika</h2>
     
             <div className="grid md:grid-cols-2 gap-5 my-4">
             

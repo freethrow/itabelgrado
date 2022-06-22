@@ -31,7 +31,7 @@ const Header = () => {
     </Head>
   <div className="flex md:flex-col flex-row justify-between container max-w-5xl md:mx-auto relative px-4  pt-2">
       <div className="flex flex-row justify-between items-center align-middle">
-        <Link href="/" passHref><Image className="cursor-pointer" src="/logo1.png" height="90" width="150" alt="ITA logo" /></Link>
+        <Link href="/" passHref><Image className="cursor-pointer" src="/logo1.png" height="90" width="150" alt="ITA logo" priority /></Link>
         <div className="hidden md:block">
           <Link href="/" passHref><h3 className="text-itaGray font-normal font-archivo px-2 my-2 cursor-pointer animate-pulse">
             Italijanska Agencija za Spoljnu Trgovinu, Beograd</h3>
@@ -54,7 +54,7 @@ const Header = () => {
       </ul>
 
       <div className={open?"mobileMenu":"mobileMenu -translate-y-full"} onClick={()=>setOpen(false)}>
-      <Link href="/" passHref><Image className="cursor-pointer" src="/negative.png" height="120" width="200" /></Link>  
+      <Link href="/" passHref><Image className="cursor-pointer" src="/negative.png" height="120" width="200" priority /></Link>  
         <ul className="flex flex-col w-3/4">
             <li className="mobileBtn"><Link href="/" passHref>Naslovna</Link></li>
             <li className="mobileBtn"><Link href="/events" passHref>Događaji</Link></li>    
