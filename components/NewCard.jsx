@@ -14,6 +14,7 @@ const NewCard = ({article}) => {
             src={'https:'+ article.fields.cover.fields.file.url}
             width={article.fields.cover.fields.file.details.image.width}
             height={article.fields.cover.fields.file.details.image.height}
+            priority
             />
         </div>
         <div className="text-sm  font-normal text-itaGray">{article.fields.short}</div>

@@ -14,7 +14,7 @@ const GalleryCard = ({title, address, dateTime, url, width, height, linkTo}) => 
         <Link href={"galleries/"+linkTo}>
         <div>
             <div className="font-archivo text-itaGreen font-semibold text-lg">{title}</div>
-            <div className="text-sm font-medium text-itaGray"></div>
+            
             <div className="opacity-80 hover:opacity-100 transition-opacity duration-300">
                 <Image src={'https:'+ url}
                     className="w-full"

@@ -16,11 +16,7 @@ const Header = () => {
     setOpen(!open)
   }
 
-  const router = useRouter()
 
-  useEffect(()=>{
-    setOpen(false)
-  },[router.pathname])
 
   return (
  
@@ -31,7 +27,7 @@ const Header = () => {
     </Head>
   <div className="flex md:flex-col flex-row justify-between container max-w-5xl md:mx-auto relative px-4  pt-2">
       <div className="flex flex-row justify-between items-center align-middle">
-        <Link href="/" passHref><Image className="cursor-pointer" src="/logo1.png" height="90" width="150" alt="ITA logo" priority /></Link>
+        <Link href="/" passHref><Image className="cursor-pointer" src="/logo1.png" height="102" width="167" alt="ITA logo" priority /></Link>
         <div className="hidden md:block">
           <Link href="/" passHref><h3 className="text-itaGray font-normal font-archivo px-2 my-2 cursor-pointer animate-pulse">
             Italijanska Agencija za Spoljnu Trgovinu, Beograd</h3>
@@ -46,7 +42,7 @@ const Header = () => {
 
 
       <ul className="hidden md:flex flex-row text-itaGray space-x-3 h-full my-16 justify-evenly font-archivo uppercase mainMenu">
-          <li className="hover:text-itaDarkGray"><Link href="/" passHref><a>Naslovna</a></Link></li>
+      <Link href="/" passHref><li className="hover:text-itaDarkGray"><a>Naslovna</a></li></Link>
           <li className="hover:text-itaDarkGray"><Link href="/events" passHref><a>Događaji</a></Link></li>    
           <li className="hover:text-itaDarkGray"><Link href="/articles" passHref>Novosti</Link></li>  
           <li className="hover:text-itaDarkGray"><Link href="/galleries" passHref>Galerije</Link></li>           
@@ -56,11 +52,11 @@ const Header = () => {
       <div className={open?"mobileMenu":"mobileMenu -translate-y-full"} onClick={()=>setOpen(false)}>
       <Link href="/" passHref><Image className="cursor-pointer" src="/negative.png" height="120" width="200" priority /></Link>  
         <ul className="flex flex-col w-3/4">
-            <li className="mobileBtn"><Link href="/" passHref>Naslovna</Link></li>
-            <li className="mobileBtn"><Link href="/events" passHref>Događaji</Link></li>    
-            <li className= "mobileBtn"><Link href="/articles" passHref>Novosti</Link></li>
-            <li className= "mobileBtn"><Link href="/galleries" passHref>Galerije</Link></li>                
-            <li className="mobileBtn"><Link href="/about" passHref>ITA@Beograd</Link></li>   
+            <Link href="/" passHref><li className="mobileBtn">Naslovna</li></Link>
+            <Link href="/events" passHref><li className="mobileBtn">Događaji</li></Link>    
+            <Link href="/articles" passHref><li className= "mobileBtn">Novosti</li></Link>
+            <Link href="/galleries" passHref><li className= "mobileBtn">Galerije</li></Link>                
+            <Link href="/about" passHref><li className="mobileBtn">ITA@Beograd</li></Link>   
         </ul>
       </div>
         <span className={open?"md:hidden flex z-50 text-itaWhite":"md:hidden flex z-50 text-itaGreen"} onClick={toggleMobile}>
