@@ -43,10 +43,10 @@ const Header = () => {
 
       <ul className="hidden md:flex flex-row text-itaGray space-x-3 h-full my-16 justify-evenly font-archivo uppercase mainMenu">
       <Link href="/" passHref><li className="hover:text-itaDarkGray"><a>Naslovna</a></li></Link>
-          <li className="hover:text-itaDarkGray"><Link href="/events" passHref><a>Događaji</a></Link></li>    
-          <li className="hover:text-itaDarkGray"><Link href="/articles" passHref>Novosti</Link></li>  
-          <li className="hover:text-itaDarkGray"><Link href="/galleries" passHref>Galerije</Link></li>           
-          <li className="hover:text-itaDarkGray"><Link href="/about" passHref>ITA@Beograd</Link></li>   
+          <Link href="/events" passHref><li className="hover:text-itaDarkGray cursor-pointer"><a>Događaji</a></li></Link>  
+          <Link href="/articles" passHref><li className="hover:text-itaDarkGray">Novosti</li></Link> 
+          <Link href="/galleries" passHref><li className="hover:text-itaDarkGray">Galerije</li></Link>           
+          <Link href="/about" passHref><li className="hover:text-itaDarkGray">ITA@Beograd</li></Link>  
       </ul>
 
       <div className={open?"mobileMenu":"mobileMenu -translate-y-full"} onClick={()=>setOpen(false)}>

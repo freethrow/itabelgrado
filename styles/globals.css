@@ -27,10 +27,14 @@
     }
 
     .mainMenu>li{
-        @apply hover:scale-125 transition-transform duration-500
+        @apply hover:scale-125 transition-transform duration-500 cursor-pointer
     }
 
     .prose p{
         @apply my-2
+    }
+
+    .social svg{
+        @apply hover:scale-110 transition-transform duration-200
     }
 }

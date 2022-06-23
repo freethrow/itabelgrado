@@ -24,10 +24,10 @@ const Footer = () => {
             </Link></div>
           <div className="flex flex-col justify-between items-end">
             <p className="my-3">Pratite nas:</p>
-            <div className="flex flex-row justify-evenly space-x-3 cursor-pointer">              
-              <ImYoutube size={25} />
+            <div className="flex flex-row justify-evenly space-x-3 cursor-pointer social">            
+              <Link href="https://www.youtube.com/channel/UCDcxMr1QfesFd-G1cShfPiw" passHref><ImYoutube size={25} /></Link>
               <Link href="https://twitter.com/itabelgrade" passHref><a><ImTwitter size={25} /></a></Link> 
-              <Link href="https://www.instagram.com/itatradeagency/" passHref><a><ImLinkedin size={25} /></a></Link>
+              <Link href="https://www.linkedin.com/company/ita-italian-trade-agency-serbia-and-montenegro/?viewAsMember=true" passHref><a><ImLinkedin size={25} /></a></Link>
               <Link href="https://www.instagram.com/itatradeagency/" passHref><a><ImInstagram size={25} /></a></Link>
             </div>
           </div>
