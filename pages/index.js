@@ -54,13 +54,13 @@ export const getStaticProps = async () => {
 export default function Home({event, articles, gallery}) {
 
 
-  const [videoUrl, setVideoUrl] = useState('/MAC.mp4')
+  const [videoUrl, setVideoUrl] = useState('/slide.mp4')
 
-  useEffect(()=>{
-    let items = ['/MAC.mp4','/Agri-food_SAFE.mp4']
-    setVideoUrl(items[Math.floor(Math.random()*items.length)])
+  // useEffect(()=>{
+  //   let items = ['/MAC.mp4','/Agri-food_SAFE.mp4']
+  //   setVideoUrl(items[Math.floor(Math.random()*items.length)])
 
-  },[])
+  // },[])
 
 
 
