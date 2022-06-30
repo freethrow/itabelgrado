@@ -9,14 +9,14 @@ const about = () => {
         <div className="my-5 h-full flex flex-col justify-center ">
         <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">O Agenciji</h2>
           <div className="text-itaGgray my-4 text-sm font-normal text-justify">
-          <p className="py-1"><span className="text-itaGreen">ICE – Agencija za promociju spoljne trgovine i internacionalizaciju italijanskih preduzeća</span> je organizacija preko
+          <p className="py-1"><span className="text-itaGreen">ICE – Agencija za promociju spoljne trgovine i internacionalizaciju italijanskih preduzeća</span> je vladina ustanova preko
             koje Vlada Italije podržava konsolidaciju i trgovinsko-ekonomski razvoj italijanskih firmi na inostranim tržištima. 
             Agencija deluje i kao subjekat ovlašćen da promoviše privlačenje stranih investicija u Italiju. 
           </p>
-          <p className="py-1">Kao dinamična, moderna organizacija i uz podršku razgranate mreže kancelarija u inostranstvu, ICE vrši aktivnosti informisanja,
+          <p className="py-1">Kao dinamična, moderna organizacija, uz podršku razgranate mreže kancelarija u inostranstvu, ICE vrši aktivnosti informisanja,
              podrške, konsaltinga, promocije i obuke za mala i srednja italijanska preduzeća. Zahvaljujući upotrebi 
              najsavremenijih instrumenata promocije i višestrukih kanala komunikacije, ICE radi na 
-             afirmisanju izuzetnih proizvoda i usluga Made in Italy u svetu.
+             afirmisanju izuzetnih proizvoda i usluga <span className="text-itaGreen">Made in Italy</span> u svetu.
           </p>
           <p className="py-1">Detaljnije informacije su dostupne na matičnom sajtu Agencije:  
             <Link href="http://www.ice.it" passHref>

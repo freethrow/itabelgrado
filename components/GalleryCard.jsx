@@ -7,10 +7,10 @@ import { format } from 'fecha';
 
 const GalleryCard = ({title, address, dateTime, url, width, height, linkTo}) => {
 
-  const evTime = format(new Date(dateTime), 'dddd MMMM Do, YYYY'); 
+  const evTime = format(new Date(dateTime), 'dd.MM.YYYY.'); 
 
   return (
-    <div className="w-full p-4 shadow-md flex flex-col justify-center items-center my-5 cursor-pointer">
+    <div className="w-full p-4 shadow-md flex flex-col justify-between items-stretch my-5 cursor-pointer">
         <Link href={"galleries/"+linkTo}>
         <div>
             <div className="font-archivo text-itaGreen font-semibold text-lg">{title}</div>
@@ -22,7 +22,7 @@ const GalleryCard = ({title, address, dateTime, url, width, height, linkTo}) => 
                     width={width}
                     height={height} />
             </div>
-            <div className=" text-itaGray font-normal">{address} <span className="text-itaGreen">{evTime}</span></div>
+            <div className=" text-itaGray font-normal">{address} <br/> <span className="text-itaGreen">{evTime}</span></div>
         </div>
         </Link>
     </div>

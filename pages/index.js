@@ -7,6 +7,7 @@ import Video from "../components/Video"
 
 
 import NewsCard from "../components/NewsCard"
+import GalleryCard from "../components/GalleryCard"
 
 import ACard from "../components/ACard"
 const client = createClient({
@@ -35,7 +36,7 @@ export const getStaticProps = async () => {
         {
           content_type: 'gallery',
           limit:1,
-          order: 'sys.createdAt'
+          order: '-sys.createdAt'
         })
   
 
@@ -75,7 +76,7 @@ export default function Home({event, articles, gallery}) {
       <div className="grid md:grid-cols-3 gap-3">
 
         <div className=" md:col-span-2">
-          <h2 className=" font-archivo text-itaGreen font-bold text-xl border-itaGreen my-2 border-b-2">Najava manifestacija</h2>
+          <h2 className=" font-archivo text-itaGreen font-bold text-xl border-itaGreen my-2 border-b-2">Događaji</h2>
           <ACard 
             title = {event.fields.title} 
             description = {event.fields.short} 
@@ -91,10 +92,21 @@ export default function Home({event, articles, gallery}) {
 
         </div>
         <div className="">
-        <h2 className=" font-archivo text-itaRed font-bold text-xl  border-itaRed my-2 border-b-2">Novosti</h2>
-        <NewsCard articles = {articles} />
+          <h2 className=" font-archivo text-itaRed font-bold text-xl  border-itaRed my-2 border-b-2">Novosti</h2>
+          <NewsCard articles = {articles} />
 
-
+          <h2 className=" font-archivo text-itaRed font-bold text-xl  border-itaRed my-2 border-b-2">Galerije</h2>
+          <GalleryCard 
+                    key={gallery.sys.id}
+                    url = {gallery.fields.cover.fields.file.url}
+                    title = {gallery.fields.title}
+                    address = {gallery.fields.address}
+                    width={gallery.fields.cover.fields.file.details.image.width}
+                    height={gallery.fields.cover.fields.file.details.image.height}
+                    dateTime = {gallery.fields.date}
+                    linkTo = {gallery.fields.slug}
+                
+                />
         </div>
 
         

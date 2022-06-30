@@ -37,4 +37,11 @@
     .social svg{
         @apply hover:scale-110 transition-transform duration-200
     }
+
+    h5 {
+        @apply bg-itaGreen text-center p-3 rounded-md hover:bg-lightGray transition-colors duration-300 cursor-pointer
+    }
+     h5>a{
+        @apply font-medium block w-full text-itaWhite no-underline !important
+     }
 }

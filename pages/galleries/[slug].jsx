@@ -81,6 +81,10 @@ const GalleryDetails = ({gallery}) => {
 
             </div>
 
+            {gallery.fields.author?<div className="text-center text-sm">
+                Fotografije: <span className=" font-medium">{gallery.fields.author}</span>
+                </div>:null}
+
          
         </div>
         
