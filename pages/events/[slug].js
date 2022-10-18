@@ -1,10 +1,12 @@
 import {createClient} from 'contentful'
 
 import { documentToReactComponents} from '@contentful/rich-text-react-renderer'
+import {INLINES} from '@contentful/rich-text-types'
 import Image from 'next/image'
 import dynamic from 'next/dynamic';
 import Link from 'next/link'
 import {GrDocumentVerified, GrLink} from 'react-icons/gr'
+
 
 
 const MapWithNoSSR = dynamic(() => import("../../components/Map"), {
@@ -18,6 +20,13 @@ const MapWithNoSSR = dynamic(() => import("../../components/Map"), {
   })
 
 export const getStaticPaths = async ()=> {
+
+
+
+
+
+
+
     const res = await client.getEntries({
         content_type:'event'
     })
@@ -46,6 +55,24 @@ export async function getStaticProps({params}){
 
 
 const EventDetails = ({event}) => {
+
+    const options = {
+        renderNode: {
+          [INLINES.EMBEDDED_ENTRY]: (node) => {
+            console.log(node)
+           
+            if(node.nodeType==='embedded-entry-inline') {
+                
+              return <iframe width="420" height="315" src={node.data.target.fields.url} 
+                title="YouTube video player" 
+                frameBorder={0} 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen></iframe>
+              
+             
+            } 
+          }
+        }}
  
     const position = [event.fields.location.lat, event.fields.location.lon]
 
@@ -60,7 +87,7 @@ const EventDetails = ({event}) => {
                               
                     <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">{event.fields.title}</h2>
                     <div className="prose prose-p:my-2 prose-sm prose-ul:list-none prose-ol:font-bold prose-a:text-itaGreen prose-a:font-light prose-a:decoration-0">
-                        {documentToReactComponents(event.fields.detailed)}
+                        {documentToReactComponents(event.fields.detailed, options)}
                     </div>
                 </div>
             </div>

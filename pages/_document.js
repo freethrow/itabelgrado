@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html lang="sr">
        <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
             <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto:wght@100;400;500&display=swap" rel="preconnect" />
             <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet" />
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"

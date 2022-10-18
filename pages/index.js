@@ -22,7 +22,7 @@ export const getStaticProps = async () => {
     {
       content_type: 'event',
       limit:1,
-      order: 'sys.createdAt'
+      order: '-sys.createdAt'
     })
 
   const articleRes = await client.getEntries(
