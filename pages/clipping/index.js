@@ -49,9 +49,9 @@ const Clippings = ({clippings}) => {
                         </a></Link> 
                         </div>                    
                   
-                    {clipping.fields.event?<div className="text-xs text-itaGray my-4">
+                    {clipping.fields.event?<div className="text-xs text-itaGray my-4 flex flex-col justify-center items-center">
                         <Link href={"/events/"+clipping.fields.event.fields.slug}>
-                            <a>{clipping.fields.event.fields.title}</a>
+                            <a className="bg-itaGreen text-itaWhite text-center p-2 rounded-md">{clipping.fields.event.fields.title}</a>
                         </Link></div>:<></>}
                 </div>
                

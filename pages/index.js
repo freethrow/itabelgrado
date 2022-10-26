@@ -29,7 +29,7 @@ export const getStaticProps = async () => {
       {
         content_type: 'article',
         limit:5,
-        order: 'sys.createdAt'
+        order: '-sys.createdAt'
       })
   
       const galleryRes = await client.getEntries(
@@ -55,7 +55,7 @@ export const getStaticProps = async () => {
 export default function Home({event, articles, gallery}) {
 
 
-  const [videoUrl, setVideoUrl] = useState('/slide.mp4')
+  const [videoUrl, setVideoUrl] = useState('/Italian Wine_Taste the passion.mp4')
 
   // useEffect(()=>{
   //   let items = ['/MAC.mp4','/Agri-food_SAFE.mp4']

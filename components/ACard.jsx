@@ -13,7 +13,7 @@ const evTime = format(new Date(eventTime), 'DD. MM. YYYY. [u] HH:mm');
         <Link href={"/events"+linkTo}>
         <div className="w-full mx-auto overflow-hidden bg-white rounded-lg shadow-lg my-3 flex flex-col justify-between cursor-pointer transition-transform duration-300">
             <div className="px-4 py-2">
-                <h1 className="text font-bold text-itaGreen uppercase dark:text-white">{title}</h1>
+                <h1 className="text text-center font-bold text-itaGreen uppercase dark:text-white">{title}</h1>
                 <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{description}</p>
             </div>
             <div className="relative bg-itaGreen hover:bg-[#000000] transition-colors  duration-500">
