@@ -55,7 +55,7 @@ export const getStaticProps = async () => {
 export default function Home({event, articles, gallery}) {
 
 
-  const [videoUrl, setVideoUrl] = useState('/Italian Wine_Taste the passion.mp4')
+  const [videoUrl, setVideoUrl] = useState('/iwt.mp4')
 
   // useEffect(()=>{
   //   let items = ['/MAC.mp4','/Agri-food_SAFE.mp4']
