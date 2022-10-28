@@ -57,11 +57,7 @@ export default function Home({event, articles, gallery}) {
 
   const [videoUrl, setVideoUrl] = useState('/iwt.mp4')
 
-  // useEffect(()=>{
-  //   let items = ['/MAC.mp4','/Agri-food_SAFE.mp4']
-  //   setVideoUrl(items[Math.floor(Math.random()*items.length)])
 
-  // },[])
 
 
 
