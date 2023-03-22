@@ -39,8 +39,6 @@ export async function getStaticProps({params}){
 
 const ArticleDetails = ({article}) => {
 
-
-
   return (
     <div className="flex flex-col items-center justify-center align-middle relative my-5">
         <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">{article.fields.title}</h2>
@@ -65,8 +63,8 @@ const ArticleDetails = ({article}) => {
             {article.fields.documents&&<h2 className="font-archivo text-itaGreen font-semibold text-center my-5 border-b-itaGreen border-b">Dokumenti</h2>}
                 {article.fields.documents&&article.fields.documents.map((document)=>{
                     return (
-                    
-                        <Link href={'https:'+document.fields.file.url} download="New" className="cursor-pointer" key={document.fields.title}>
+                        
+                        <Link href={'https:'+document.fields.document[0].fields.file.url} download="New" className="cursor-pointer" key={document.fields.title}>
                             <div className="text-itaGray my-2 hover:text-itaRed cursor-pointer font-medium text-sm flex flex-row justify-start align-middle items-center space-x-2">
                             <GrDocumentVerified size={16} /> <span>{document.fields.title}</span>
                                   </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 import {createClient} from 'contentful'
 
-import NewCard from '../../components/NewCard'
+import ItaCard from '../../components/ItaCard'
 
 
 
@@ -44,7 +44,7 @@ const Articles = ({articles}) => {
 
               article.fields.category.fields.title=='italian'&&
                
-                <NewCard article={article} key={article.fields.title} />
+                <ItaCard article={article} key={article.fields.title} />
                                           
                 )
             )}
