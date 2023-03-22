@@ -1,7 +1,8 @@
 import {createClient} from 'contentful'
 import { documentToReactComponents} from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
-
+import Link from 'next/link'
+import {GrDocumentVerified} from 'react-icons/gr'
 
 const client = createClient({
     space:process.env.CONTENTFUL_SPACE_ID ,
