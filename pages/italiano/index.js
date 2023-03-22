@@ -1,9 +1,8 @@
 import React from 'react'
-//import Link from 'next/link'
+import Link from 'next/link'
 import {createClient} from 'contentful'
 
 import NewCard from '../../components/NewCard'
-
 
 
 
@@ -14,7 +13,11 @@ export const getStaticProps = async () => {
         accessToken:process.env.CONTENTFUL_ACCESS_KEY,
       })
 
-    const res = await client.getEntries({content_type: 'article'})
+    const res = await client.getEntries({
+      content_type: 'article'
+    })
+
+    
 
     return {
         props:{
@@ -26,22 +29,27 @@ export const getStaticProps = async () => {
 
 const Articles = ({articles}) => {
 
-
-
+  const filtered_articles = articles.map(article=>{
+    if(article.fields.category.fields.title=='italian'){
+      return article
+    }    
+  })
 
   return (
     <div className="flex-1 max-w-5xl mx-auto my-5 container md:mx-auto px-4 ">
 
-    <h2 className=" font-archivo text-itaGreen font-bold text-xl my-2 text-center border-b-itaGreen border-b">Novosti</h2>
+    <h2 className=" font-archivo text-itaGreen font-bold text-xl my-2 text-center border-b-itaGreen border-b">
+      Italiano</h2>
     
             <div className="grid md:grid-cols-2 gap-5 my-8">
                 
             
             {articles.map(article=>(
-            article.fields.category.fields.title=='serbian'&&
-                <NewCard article={article} key={article.fields.title} />
+
+              article.fields.category.fields.title=='italian'&&
                
-                            
+                <NewCard article={article} key={article.fields.title} />
+                                          
                 )
             )}
 

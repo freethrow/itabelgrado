@@ -23,10 +23,6 @@ export const getStaticPaths = async ()=> {
 
 
 
-
-
-
-
     const res = await client.getEntries({
         content_type:'event'
     })
