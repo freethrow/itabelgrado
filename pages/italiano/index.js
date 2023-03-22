@@ -29,11 +29,7 @@ export const getStaticProps = async () => {
 
 const Articles = ({articles}) => {
 
-  const filtered_articles = articles.map(article=>{
-    if(article.fields.category.fields.title=='italian'){
-      return article
-    }    
-  })
+
 
   return (
     <div className="flex-1 max-w-5xl mx-auto my-5 container md:mx-auto px-4 ">
