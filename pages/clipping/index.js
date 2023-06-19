@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import {createClient} from 'contentful'
-
+import Image from 'next/image'
 import NewCard from '../../components/NewCard'
 
 
@@ -14,7 +14,9 @@ export const getStaticProps = async () => {
         accessToken:process.env.CONTENTFUL_ACCESS_KEY,
       })
 
-    const res = await client.getEntries({content_type: 'clipping'})
+    const res = await client.getEntries({content_type: 'clipping',  order: '-sys.createdAt',})
+
+    
 
     return {
         props:{
@@ -44,6 +46,15 @@ const Clippings = ({clippings}) => {
                     <div className="text-sm text-center text-itaGray">{clipping.fields.title}</div>
                     <div className="text-xl p-3 text-center flex flex-col hover:scale-105 transition-transform duration-150">
                         <Link href={clipping.fields.link}><a>
+                            {clipping.fields.picture?
+                                <p>
+                                    <Image                    
+                                        src={'https:'+ clipping.fields.picture.fields.file.url}
+                                        width={clipping.fields.picture.fields.file.details.image.width}
+                                        height={clipping.fields.picture.fields.file.details.image.height}
+                                        alt={''}
+                                    />
+                                </p>:<></>}
                         <p className="border border-itaDarkGray my-2  py-2">{clipping.fields.source}</p>
                             <p className="text-xs">{clipping.fields.dateTime}</p>
                         </a></Link> 

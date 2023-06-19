@@ -41,11 +41,12 @@ const Header = () => {
       </div>
 
 
-      <ul className="hidden md:flex flex-row text-itaGray space-x-3 h-full my-16 justify-evenly font-archivo uppercase mainMenu">
+      <ul className="hidden md:flex flex-row text-itaGray space-x-3 h-full my-16 justify-between font-archivo uppercase mainMenu">
 
           <Link href="/events" passHref><li className="hover:text-itaDarkGray cursor-pointer"><a>Događaji</a></li></Link>  
           <Link href="/articles" passHref><li className="hover:text-itaDarkGray"><a>Novosti</a></li></Link> 
-          <Link href="/galleries" passHref><li className="hover:text-itaDarkGray"><a>Galerije</a></li></Link> 
+          <Link href="/galleries" passHref><li className="hover:text-itaDarkGray"><a>Galerije</a></li></Link>
+          <Link href="/video" passHref><li className="hover:text-itaDarkGray"><a>Video</a></li></Link> 
           <Link href="/clipping" passHref><li className="hover:text-itaDarkGray"><a>Mediji</a></li></Link>  
           <Link href="/italiano" passHref><li className="hover:text-itaRed"><a className=" text-itaRed font-semibold">Italiano</a></li></Link>              
           <Link href="/about" passHref><li className="hover:text-itaDarkGray"><a>ITA@Beograd</a></li></Link>  
@@ -57,7 +58,8 @@ const Header = () => {
       
             <Link href="/events" passHref><li className="mobileBtn"><a>Događaji</a></li></Link>    
             <Link href="/articles" passHref><li className= "mobileBtn"><a>Novosti</a></li></Link>
-            <Link href="/galleries" passHref><li className= "mobileBtn"><a>Galerije</a></li></Link>  
+            <Link href="/galleries" passHref><li className= "mobileBtn"><a>Galerije</a></li></Link>
+            <Link href="/video" passHref><li className= "mobileBtn"><a>Video</a></li></Link>   
             <Link href="/clipping" passHref><li className= "mobileBtn"><a>Mediji</a></li></Link>  
             <Link href="/italiano" passHref><li className= "mobileBtn"><a>Italiano</a></li></Link>               
             <Link href="/about" passHref><li className="mobileBtn"><a>ITA@Beograd</a></li></Link>   
@@ -66,10 +68,7 @@ const Header = () => {
         <span className={open?"md:hidden flex z-50 text-itaWhite":"md:hidden flex z-50 text-itaGreen"} onClick={toggleMobile}>
         {open? <AiOutlineClose size={25} /> : <AiOutlineMenu  size={25} />}
         </span>
-      
-    </div>
-
- 
+      </div>
   </header>
 
   )

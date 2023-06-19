@@ -4,6 +4,10 @@ import {GrDocumentVerified} from 'react-icons/gr'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Yputube lite
+import LiteYouTubeEmbed from "react-lite-youtube-embed"
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css"
+
 
 const client = createClient({
     space:process.env.CONTENTFUL_SPACE_ID ,
@@ -69,6 +73,17 @@ const ArticleDetails = ({article}) => {
                 })}
             </div>
             
+            <div className="font-mono p-3">
+            <LiteYouTubeEmbed
+                aspectHeight="9"
+                aspectWidth="16"
+                id="aKQfnNQh6rw"
+                title="Some title"
+                allowFullScreen
+            />
+
+            </div>
+
             <div className="prose prose-slate prose-sm text-sm z-20 bg-itaWhite flex flex-col justify-center items-center align-middle p-2">
           
             {documentToReactComponents(article.fields.content)}</div>

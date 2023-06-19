@@ -22,6 +22,7 @@
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
     "react-leaflet": "^4.0.0",
+    "react-lite-youtube-embed": "^2.3.52",
     "react-photo-album": "^1.14.0",
     "yet-another-react-lightbox": "^1.4.0"
   },
