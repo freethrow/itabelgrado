@@ -48,7 +48,7 @@ const ArticleDetails = ({article}) => {
   return (
     <div className="flex flex-col items-center justify-center align-middle relative my-5">
         <h2 className="font-archivo text-itaGreen font-semibold border-b-itaGreen border-b">{article.fields.title}</h2>
-        <div className="grid gap-3 md:grid-cols-2 my-3 p-2">
+        <div className="my-3 p-2">
 
             <div className=" max-w-lg p-5 shadow-md flex flex-col justify-center items-center">
                 <Image                    
@@ -73,16 +73,7 @@ const ArticleDetails = ({article}) => {
                 })}
             </div>
             
-            <div className="font-mono p-3">
-            <LiteYouTubeEmbed
-                aspectHeight="9"
-                aspectWidth="16"
-                id="aKQfnNQh6rw"
-                title="Some title"
-                allowFullScreen
-            />
-
-            </div>
+     
 
             <div className="prose prose-slate prose-sm text-sm z-20 bg-itaWhite flex flex-col justify-center items-center align-middle p-2">
           
